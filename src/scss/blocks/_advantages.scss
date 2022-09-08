@@ -1,0 +1,55 @@
+.advantages {
+	padding: 2.8em 0 5em;
+	color: #0d0d0d;
+	background-color: #f6f6f6;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 14.88em;
+		margin-top: 2em;
+	}
+
+	&__subtitle {
+		margin-top: 2em;
+		font-size: 1.13rem;
+		font-weight: 700;
+	}
+
+	&__descr {
+		margin-top: 1.7em;
+		font-size: 0.88rem;
+		font-weight: 300;
+		text-align: center;
+		a {
+			color: red;
+		}
+	}
+}
+
+@media only screen and (min-width: 680px) {
+	.advantages {
+
+		&__wrapper {
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: start;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.advantages {
+
+		&__wrapper {
+			justify-content: space-between;
+		}
+	}
+}

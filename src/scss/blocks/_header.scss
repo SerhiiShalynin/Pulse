@@ -1,0 +1,71 @@
+.page__header {
+	margin: 1.1em 1.5em;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		color: white;
+		font-size: 1.6rem;
+		font-weight: 700;
+		letter-spacing: .1rem;
+		text-decoration: none;
+		span {
+			color: red;
+			font-size: 1.8rem;
+		}
+	}
+
+	&__official {
+		display: none;
+	}
+
+	&__phone {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 680px) {
+	.page__header {
+		margin: 1.1em 3em;
+	}
+	.header {
+
+		&__official {
+			display: block;
+			color: white;
+			font-size: 0.75rem;
+			font-weight: 500;
+			line-height: 1.8rem;
+			text-align: center;
+			span {
+				display: block;
+				font-size: 1.12rem;
+			}
+		}
+
+		&__phone {
+			display: block;
+			color: white;
+			font-size: 1.2rem;
+			font-weight: 700;
+			line-height: 1.8rem;
+			text-decoration: none;
+		}
+
+		&__contacts {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.page__header {
+		margin: 1.1em 0;
+	}
+}
